@@ -67,15 +67,13 @@
   font-size:20px;
   position: relative;
   top: 50px;
-  left:150px;
+  left:243px;
 }
-.header-back--menu{
-    
-}
+
 
 .TODOlist{
     position: relative;
-    width: 430px;
+    width: 630px;
     height: 440px;
     left: 8px;
     top: 121px;
@@ -93,10 +91,18 @@
     top:10px;
     white-space: nowrap;
 }
+.task_list_title li{
+    position: relative;
+    left:-40px;
+    top:0px;
+    white-space: nowrap;
+}
+
+
 .task_list_title button{
     position: relative;
     top:-24px;
-    left:170px;
+    left:190px;
 }
 
 .container_show h1{

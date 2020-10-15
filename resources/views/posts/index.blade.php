@@ -21,20 +21,17 @@
           <div class="task_list_title">
             タスク一覧
             <ul>
+            <ul>
             {{--
             @foreach ($posts as $post)
             <li><a href="">{{ $post->title }}</a></li>
+            @endforeach
             --}}
-           <li><a href="{{ url('/posts', $post->id) }}">{{ $post->title }}</a></li> 
-           <button><a href="{{ url('posts/{post}/edit', $post->id)) }}" class="edit">編集する</a></button>
-           <a href="#" class="del" data-id="{{ $post->id }}">削除する</a>
-           <form method="post" action="{{ url('/posts', $post->id) }}" id="form_{{ $post->id }}">
-           {{ csrf_field() }}
-           {{ method_field('delete') }}
-           </form>
+            @forelse ($posts as $post)
+           <li><a href="{{ url('/posts', $post->id) }}">{{ $post->title }}</a></li>
+           <button> <a href="{{ action('App\Http\Controllers\PostsController@edit', $post) }}" class="edit">編集する</a></button> 
             @empty
             <li>No posts yet</li>
-            <script src="/js/main.js"></script>  
             @endforelse
             </ul>
               <div class="dropdown">
@@ -46,4 +43,4 @@
   </div> 
 </div>
 </body>
-</html>
+</html> 
