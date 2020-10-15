@@ -1,0 +1,158 @@
+.home-title {
+    position: absolute;
+    height: 36px;
+    margin-left: 146px;
+    margin-right: 76px;
+    margin-top:70px;
+    float:left;
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.card_title{
+    position: relative;
+    width: 430px;
+    height: 140px;
+    left: 8px;
+    top: 161px;
+    border: 2px solid;
+
+    cursor: pointer;
+}
+
+.New_task_title{
+    background-color:lightgray;
+
+}
+
+.new_task_form{
+    position: relative;
+    left:36px;
+    top:10px;
+    white-space: nowrap
+}
+
+.new_task_form input{
+    width: 100px;
+}
+.new_task_form＿limit{
+    position: relative;
+    left:36px;
+    top:10px;
+    white-space: nowrap 
+}
+.new_task_form＿limit input{
+    position: relative;
+    width: 100px;
+    left:16px;
+    top:0px;
+    white-space: nowrap 
+}
+
+.Add_new_task{
+   background-color: white;
+   position: relative;
+   top:20px;
+   width:100px;
+   left:70px;
+}
+
+.header-new-task-add-menu{
+  font-size:20px;
+  position: relative;
+  top: 50px;
+  left:150px;
+}
+.header-back--menu{
+    
+}
+
+.TODOlist{
+    position: relative;
+    width: 430px;
+    height: 440px;
+    left: 8px;
+    top: 121px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.current_task_title{
+    background-color:lightgray;
+}
+
+.task_list_title{
+    position: relative;
+    left:10px;
+    top:10px;
+    white-space: nowrap 
+}
+
+.container_show h1{
+    font-size: 20px;
+    top:20px;
+    position: relative;
+    left:20px;
+}
+
+.container_show h2{
+    font-size: 30px;
+    top:40px;
+    position: relative;
+    left:65px;
+}
+
+
+
+.header-menu{
+    font-size: 30px;
+}
+
+.New_add-task_title{
+   font-size: 30px;
+   position: relative;
+   top:20px;
+   left:40px;
+}
+
+.todo-list-back-menu-button button{
+    position: relative;
+    top:-20px;
+    left:0px;
+    background-color: lightskyblue;
+}
+
+
+.todo-list-back-menu-button a{
+text-decoration: none;
+color: white;
+}
+
+.add-new-task-input-area{
+    position: relative;
+    top:100px;
+    left: 26px;
+}
+
+.add-new-task-input-area input{
+  width:200px;
+
+}
+
+.add-new-task-input-area textarea{
+    width:200px;  
+}
+
+.Add-new-task-button{
+    height:50px;
+    background-color: lightskyblue;
+    font-size: 20px;
+    color:white;
+}
+
