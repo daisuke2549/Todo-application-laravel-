@@ -6,16 +6,17 @@
 </head>
 <div class="New-task-add_title">
         <div class="New_add-task_title">
-        新規作成画面
+        編集
         </div>  
        <div class="add-new-task-input-area">  
        <div class="todo-list-back-menu-button"> 
        <button><a href="{{ url('/') }}" class="todo-list-back-menu">一覧へ戻る</a></button>
        </div>
-        <form method="post" action="{{ url('/posts') }}">
+        <form method="post" action="{{ url('/posts', $post->id) }}">
         {{ csrf_field() }}
+        {{ method_field('patch') }}
         <p>
-            <input type="text" name="title" placeholder="タスク名入力" value="{{ old('title')}}">
+            <input type="text" name="title" placeholder="タスク名入力" value="{{ old('title',$post->title)}}">
             @if ($errors->has('title'))
             <span class="error">{{ $errors->first('title') }}</span>
             @endif
@@ -27,14 +28,13 @@
             @endif
         </p>
         <p>
-            <textarea name="body" placeholder="内容を入力">{{ old('body')}}</textarea>
+            <textarea name="body" placeholder="内容を入力">{{ old('body',$post->body)}}</textarea>
             @if ($errors->has('body'))
             <span class="error">{{ $errors->first('body') }}</span>
             @endif
         </p>
         <p>
-            <input type="submit" value="新規タスク追加" class="Add-new-task-button">
+            <input type="submit" value="タスク更新" class="Add-new-task-button">
         </p>
         </form>
         </div>
-</div>

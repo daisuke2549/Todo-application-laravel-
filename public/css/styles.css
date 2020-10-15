@@ -91,7 +91,12 @@
     position: relative;
     left:10px;
     top:10px;
-    white-space: nowrap 
+    white-space: nowrap;
+}
+.task_list_title button{
+    position: relative;
+    top:-24px;
+    left:170px;
 }
 
 .container_show h1{
@@ -156,3 +161,6 @@ color: white;
     color:white;
 }
 
+.error{
+    color:red;
+}
