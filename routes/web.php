@@ -18,3 +18,4 @@ Route::get('/posts/create', 'App\Http\Controllers\PostsController@create');
 Route::post('/posts', 'App\Http\Controllers\PostsController@store');
 Route::get('/posts/{post}/edit', 'App\Http\Controllers\PostsController@edit');
 Route::patch('/posts/{post}', 'App\Http\Controllers\PostsController@update');
+Route::delete('/posts/{post}', 'App\Http\Controllers\PostsController@destroy');
