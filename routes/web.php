@@ -21,5 +21,6 @@ Route::patch('/posts/{post}', 'App\Http\Controllers\PostsController@update');
 Route::delete('/posts/{post}', 'App\Http\Controllers\PostsController@destroy');
 Route::post('/posts/{post}/comments', 'App\Http\Controllers\CommentsController@store');
 Route::get('/login', 'App\Http\Controllers\Auth\RegisterController@register');
-
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::delete('/posts/{post}/comments/{comment}', 'App\Http\Controllers\CommentsController@destroy');
