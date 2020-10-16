@@ -36,8 +36,13 @@
   <li>
     {{ $comment->body }}
   </li>
+  <button><a href="#" class="delete" data-id="{{ $comment->id }}">コメント削除</a></button>
+ <form method="post" action="{{ action('App\Http\Controllers\CommentsController@destroy', [$post, $comment]) }}" id="form_{{ $comment->id }}">
+      {{ csrf_field() }}
+      {{ method_field('delete') }}
+ </form>
   @empty
-  <li>No comments yet</li>
+  <li>コメントがありません</li>
   @endforelse
 </ul>
 <form method="post" action="{{ action('App\Http\Controllers\CommentsController@store', $post) }}">
@@ -49,9 +54,10 @@
     @endif
   </p>
   <p>
-   <input type="submit" value="Add Comment">
+   <input type="submit" value="コメント追加">
   </p>
 </form>
+<script src="/js/main.js"></script>
 </div>
 </body>
 </html>

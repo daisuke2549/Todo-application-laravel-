@@ -8,7 +8,12 @@
 </head>
 <body>
 <div class="container">
-  <div class="home-title">To do list</div>
+<div class="register-button">
+
+</div>
+<div class="home-title">To do list({{ Auth::user()->name }})
+
+</div>
    <div class="header-new-task-add-menu">
       <h1>
       <a href="{{ url('/posts/create') }}" class="header-new-task-add-menu"><button>新規タスク追加</button></a>
