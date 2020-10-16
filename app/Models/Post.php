@@ -11,4 +11,9 @@ class Post extends Model
     public $timestamps = false;
     protected $post = 'laraveldb';
     protected $fillable = ['title', 'body'];
+
+    public function comments(){
+        return $this->hasMany('App\Models\Comment');
+    }
 }
+
