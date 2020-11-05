@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TodoApp</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-<div class="container_show">
-    <h1>
-    <button><a href="{{ url('/') }}" class="header-back--menu">一覧へ戻る</a></button>
-    </h1>
+<div class="wrap1_new_task_add">
+<header>
+  <div class="header">
+  <div class="header_title">タスク詳細</div>
+<div class="header-new-task-login1">
+@if(Auth::check())
+<li><a href="{{ url('/logout') }}"><button>ログアウト</button></a></li>
+@else
+<li><a href="{{url('/register')}}"><button>ログイン</button></a></li>
+@endif
+</div> 
+  </div>
+</header>
+<body>
+<div class="task-detailed_title_wrap">
+<div class="task-detailed_title">
+       <div class="add-new-task-input-area">  
+       <div class="todo-list-back-menu-button"> 
+       <button><a href="{{ url('/') }}" class="todo-list-back-menu">一覧へ戻る</a></button>
+       </div>
     <h2>{{ $post->title }}</h2>
       <div class="TODOlist-detail"> 
             <table border="1" style="border-collapse: collapse">
@@ -29,7 +45,8 @@
             </table>
       </div>
 </div>
-<div class="task-comment">
+</div>
+<!-- <div class="task-comment">
 <h2>Comments</h2>
 <ul>
   @forelse ($post->comments as $comment)
@@ -56,7 +73,7 @@
   <p>
    <input type="submit" value="コメント追加">
   </p>
-</form>
+</form> -->
 <script src="/js/main.js"></script>
 </div>
 </body>

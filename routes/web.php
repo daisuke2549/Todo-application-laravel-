@@ -24,3 +24,4 @@ Route::post('/posts/{post}/comments', 'App\Http\Controllers\CommentsController@s
 Route::post('/login', 'App\Http\Controllers\Auth\RegisterController@register');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::delete('/posts/{post}/comments/{comment}', 'App\Http\Controllers\CommentsController@destroy');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

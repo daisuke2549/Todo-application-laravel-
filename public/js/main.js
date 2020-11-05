@@ -14,3 +14,17 @@
     }
   
   })();
+
+  $(".header_title").on("mouseover",function(){
+    $(".header_title").css({
+        color: "#4dc0b2",
+        backgroundColor: "#ffc042"
+    });
+  });
+  
+  $(".header_title").on("mouseout",function(){
+    $(".header_title").css({
+        color: "",
+        backgroundColor: ""
+    });
+  });

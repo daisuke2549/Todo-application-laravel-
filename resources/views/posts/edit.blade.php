@@ -1,13 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+<body>
+<div class="wrap1_new_task_add">
+<header>
+  <div class="header">
+  <div class="header_title">タスク編集</div>
+<div class="header-new-task-login1">
+@if(Auth::check())
+<li><a href="{{ url('/logout') }}"><button>ログアウト</button></a></li>
+@else
+<li><a href="{{url('/register')}}"><button>ログイン</button></a></li>
+@endif
+</div> 
+  </div>
+</header>
 <div class="New-task-add_title">
-        <div class="New_add-task_title">
-        編集
-        </div>  
        <div class="add-new-task-input-area">  
        <div class="todo-list-back-menu-button"> 
        <button><a href="{{ url('/') }}" class="todo-list-back-menu">一覧へ戻る</a></button>

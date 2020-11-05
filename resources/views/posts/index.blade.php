@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+<div class="wrap">
 <header>
   <div class="header">
   <div class="header_title">タスク一覧</div>
@@ -14,14 +15,22 @@
       <a href="{{ url('/posts/create') }}" class="header-new-task-add-menu"><button>新規タスク追加</button></a>
 </div> 
 <div class="header-new-task-login">
-      <a href="{{ url('/login') }}" class="header-new-task-add-menu-login"><button>ログイン</button></a>
+@if(Auth::check())
+<li><a href="{{ url('/logout') }}"><button>ログアウト</button></a></li>
+@else
+<li><a href="{{url('/register')}}"><button>ログイン</button></a></li>
+@endif
 </div> 
   </div>
-
 </header>
 
-<div class="wrap">
+
 <div class="TODOlist">
+           @if(Auth::check())
+          <p class= "current_user_information">現在ログインしているのは<b>{{ Auth::user()->name }}</b>です</p>
+          @else
+          <p class= "current_user_information"></p>
+          @endif
           <div class="task_list_title">
             {{--
             @foreach ($posts as $post)
@@ -55,5 +64,6 @@
           <p>Copyright &copy; 2020 Daisuke Sasaki's To do app All Rights Reserved.</p>
         </div>
 </footer>
+<script src="/public/js/main.js" type="text/javascript"></script>
 </body>
 </html> 
