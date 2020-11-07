@@ -20,6 +20,11 @@ a{
 li{
     list-style: none;
 }
+.to-do-app-link{
+  font-size: 32px;
+  position: relative;
+  top:100px;
+}
 
 .current_task_title{
     font-weight: bold;
@@ -93,14 +98,13 @@ li{
 }
 
 .header-new-task-add-menu{
-  font-size:20px;
+  font-size:16px;
   position: relative;
   top: -20px;
   left:663px;
 }
 .header-new-task-add-menu button{
-  font-size: 30px;
-
+    font-size:30px;
 }
 
 .header-new-task-add-menu button{
@@ -219,7 +223,7 @@ li{
 }
 .current_user_information{
     text-align: center;
-    color:white;
+    color:black;
     font-size: 38px;
 }
 
@@ -393,7 +397,7 @@ footer{
 
 .task-detailed_title h2{
   text-align: center;
-  color: white;
+  color: black;
   font-size: 34px;
   position: relative;
   top:-100px;
@@ -408,21 +412,21 @@ footer{
 }
 .TODOlist p{
     color:black;
-    font-size: 18px;
+    font-size: 16px;
 }
 .task_list_title li{
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     left:-90px;
 }
 .task_list_title button{
 position: relative;
-font-size: 18px;
+font-size: 16px;
 top:-32px;
 left:200px;
 }
 .copyright p{
-    font-size: 18px;
+    font-size: 16px;
     top:15px;
     position: relative;
 }
@@ -465,18 +469,18 @@ left:200px;
 font-size:20px;
 position: relative;
 top: -60px;
-left:3px;
+left:0px;
 }
 
 .header-new-task-login1 button {
-    font-size: 18px;
+    font-size: 16px;
     background-color:lightgray;
     color: black;
     width:90px;
     height:30px;
     white-space: nowrap;
     position: relative;
-    left:254px;
+    left:265px;
     top:50px;
 }
 
@@ -488,27 +492,68 @@ left:3px;
     font-size: 18px;
   }
 .header-new-task-add-menu button{
-    width:140px;
+    width:125px;
     height:30px;
-    font-size:18px;
+    font-size:16px;
  }
  .header-new-task-login{
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     top: 20px;
     left:260px;
 }
  .header-new-task-login button{
-    font-size: 18px;
+    font-size: 16px;
     background-color:lightgray;
     color: black;
     top:-25px;
-    width:85px;
+    width:90px;
     height:30px;
     white-space: nowrap;
     position: relative;
-    left:6px;
+    left:4px;
 }
+.task-detailed_title h2{
+    text-align: center;
+    color: black;
+    font-size: 34px;
+    position: relative;
+    top:-100px;
+  }
+
+.TODOlist-detail table{
+    vertical-align: center;
+    width:335px;
+    position: relative;
+    top:-120px;
+    margin: auto;
+    left:-25px;
+}
+
+.TODOlist-detail h{
+    color:blue;
+}
+
+.TODOlist-detail th{
+    font-size: 16px;
+   background-color:lightblue;
+   width:120px;
+   vertical-align: center;
+   height:20px;
+}
+
+.TODOlist-detail tr{
+    font-size: 16px;
+    background-color:yellow;
+    text-align: center;
+ }
+
+
+ .TODOlist-detail td{
+    width:600px;
+    vertical-align: center;
+ }
+
 
 }
        

@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <div class="to-do-app-link"><a href="{{url('/')}}">To do appはこちら</a></div>
                 </div>
             </div>
         </div>
