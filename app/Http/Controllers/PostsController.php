@@ -33,13 +33,6 @@ class PostsController extends Controller
     public function edit(Post $post) {
       return view('posts.edit')->with('post', $post);
     }
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    public function Newpost() {
-        return view('newpost');
-}
 
     public function update(PostRequest $request, Post $post) {
 
@@ -53,10 +46,5 @@ class PostsController extends Controller
          $post->delete();
          return redirect('/');
   }
-  public function construct()
-  {
-      $this->middleware('auth');
-  }
+
 }
-
-

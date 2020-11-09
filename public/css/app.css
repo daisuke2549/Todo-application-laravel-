@@ -10903,16 +10903,3 @@ a.text-dark:focus {
   }
 }
 
-
-.New_user_register_title h1{
-    color: blue;
-    position: relative;
-    margin:auto;
-    left:350px;
-    font-size: 30px;
-}
-
-.login-side-button{
-    color:blue;
-    font-size: 30px;
-}
