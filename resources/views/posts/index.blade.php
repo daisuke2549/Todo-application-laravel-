@@ -21,7 +21,7 @@
 <li><a href="{{url('/register')}}"><button>ログイン</button></a></li>
 @endif
 </div> 
-</div>
+  </div>
 </header>
 
 
