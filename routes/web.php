@@ -12,8 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['middleware' => 'auth'], function() {
 Route::get('/', 'App\Http\Controllers\PostsController@index');
+
 Route::get('/posts/{post}', 'App\Http\Controllers\PostsController@show')->where('post', '[0-9]+');
 Route::get('/posts/create', 'App\Http\Controllers\PostsController@create');
 Route::post('/posts', 'App\Http\Controllers\PostsController@store');
@@ -26,6 +26,5 @@ Route::post('/login', 'App\Http\Controllers\Auth\RegisterController@register');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::delete('/posts/{post}/comments/{comment}', 'App\Http\Controllers\CommentsController@destroy');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-});
-
 Auth::routes();
+Route::post('/listing', 'App\Http\Controllers\Auth\ListingsController@listing');
