@@ -157,7 +157,7 @@ li{
 .wrap{
     position: relative;
     width: auto;
-    height: 6820px;
+    height: 1020px;
     background-image: url(rabbit.jpg);
     cursor: pointer;
 }
@@ -168,7 +168,6 @@ li{
     background-image: url(rabbit.jpg);
     cursor: pointer;
 }
-
 
 
 
@@ -417,7 +416,7 @@ footer{
 .task_list_title li{
     font-size: 16px;
     position: relative;
-    left:-90px;
+    left:-80px;
 }
 .task_list_title button{
 position: relative;
@@ -553,6 +552,20 @@ left:0px;
     width:600px;
     vertical-align: center;
  }
+ .task-detailed_title h2{
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    position: relative;
+    top:-100px;
+    left:-20px;
+  }
+
+.task_list_title button{
+    position: relative;
+    top:-27px;
+    left:215px;
+}
 
 
 }
