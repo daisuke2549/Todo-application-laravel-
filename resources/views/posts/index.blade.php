@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo管理アプリ</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 <div class="wrap">
 <header>
   <div class="header">
-  <div class="header_title">タスク一覧</div>
+  <div class="header_title">Todo管理アプリ タスク一覧</div>
   <div class="header-new-task-add-menu">
       <a href="{{ url('/posts/create') }}" class="header-new-task-add-menu"><button>新規タスク追加</button></a>
 </div> 
@@ -46,7 +46,7 @@
             {{ method_field('delete') }}
           </form>  
            @empty
-            <li>No posts yet</li>
+            <li class="no-post-yet" ><p>現状、投稿はありません</p></li>
             @endforelse
             </ul>
               <div class="dropdown">
@@ -64,6 +64,5 @@
           <p>Copyright &copy; 2020 Daisuke Sasaki's To do app All Rights Reserved.</p>
         </div>
 </footer>
-<script src="/public/js/main.js" type="text/javascript"></script>
 </body>
 </html> 

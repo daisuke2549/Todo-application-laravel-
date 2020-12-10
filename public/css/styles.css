@@ -170,11 +170,19 @@ li{
 }
 
 
+.task-detailed_title_wrap{
+    position: relative;
+    width: auto;
+    left:0px;
+    height: 1020px;
+    background-image: url(rabbit.jpg);
+}
 
 
 .TODOlist-detail{
     position: relative;
     top:40px;
+
 }
 .TODOlist-detail table{
     vertical-align: center;
@@ -405,9 +413,9 @@ footer{
 @media screen and (max-width:640px) {
 
 .header_title{
-    font-size: 26px;
+    font-size: 22px;
     position: relative;
-    top:25px;
+    top:15px;
 }
 .TODOlist p{
     color:black;
@@ -519,6 +527,15 @@ left:0px;
     position: relative;
     top:-100px;
   }
+
+.no-post-yet p{
+    margin:auto;
+    position: absolute;
+    left:130px;
+    font-size: 24px;
+}
+
+
 
 .TODOlist-detail table{
     vertical-align: center;

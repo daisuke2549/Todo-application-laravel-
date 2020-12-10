@@ -27,6 +27,7 @@
        <div class="todo-list-back-menu-button"> 
        <button><a href="{{ url('/') }}" class="todo-list-back-menu">一覧へ戻る</a></button>
        </div>
+ <div class="TODOlist-detail-wrap">
     <h2>{{ $post->title }}</h2>
       <div class="TODOlist-detail"> 
             <table border="1" style="border-collapse: collapse">
@@ -46,34 +47,6 @@
       </div>
 </div>
 </div>
-<!-- <div class="task-comment">
-<h2>Comments</h2>
-<ul>
-  @forelse ($post->comments as $comment)
-  <li>
-    {{ $comment->body }}
-  </li>
-  <button><a href="#" class="delete" data-id="{{ $comment->id }}">コメント削除</a></button>
- <form method="post" action="{{ action('App\Http\Controllers\CommentsController@destroy', [$post, $comment]) }}" id="form_{{ $comment->id }}">
-      {{ csrf_field() }}
-      {{ method_field('delete') }}
- </form>
-  @empty
-  <li>コメントがありません</li>
-  @endforelse
-</ul>
-<form method="post" action="{{ action('App\Http\Controllers\CommentsController@store', $post) }}">
-  {{ csrf_field() }}
-  <p>
-    <input type="text" name="body" placeholder="コメントを入力" value="{{ old('body') }}">
-    @if ($errors->has('body'))
-    <span class="error">{{ $errors->first('body') }}</span>
-    @endif
-  </p>
-  <p>
-   <input type="submit" value="コメント追加">
-  </p>
-</form> -->
 <script src="/js/main.js"></script>
 </div>
 </body>
